@@ -29,7 +29,8 @@
 		<?php get_main_menu(); ?>
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
-				<h2>Kay McFarlen</h2> <!-- Header 2 style -->
+                <h1>Our Staff</h1> <!-- Header 1 style -->
+				<h2>Kaye McFarlen</h2> <!-- Header 2 style -->
 				<!-- paragraph -->
 				<p>
 				<!-- Staff member's role -->
@@ -40,7 +41,7 @@
 				Phone: <a href="tel:2562332323, 11">256-233-2323 ext: 11</a><br/>
 				<hr class="barClass"> <!-- horizontal bar -->
 
-				<h2>Diane Craig</h2> <!-- Header 2 style -->
+				<h2>Dianne Craig</h2> <!-- Header 2 style -->
 				<!-- paragraph -->
 				<p>
 				<!-- Staff member's role -->

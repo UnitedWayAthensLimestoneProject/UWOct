@@ -26,6 +26,7 @@
 <!--
 .style1 {font-size: 24px}
 .style2 {font-size: 18px}
+.style3 {font-size: 16px}
 -->
     </style>
 </head>
@@ -37,7 +38,7 @@
 
 <!-- Main Content Starts Below-->
 				<div class="content"> <!-- css division "content" -->
-				<h1 align="center" class="style1">Get Involved</h1> 
+				<h1 align="center" class="style1">&nbsp;</h1> 
 				<!-- Header 1 style -->
 				<p align="center"><img src="images/united_kid.png" alt="Get Involved" class="center"></p> 
 				<!-- picture -->
@@ -45,12 +46,16 @@
 				<h2 align="center" class="style2">GIVE AN HOUR. GIVE A SATURDAY. GIVE YOUR BEST.</h2> 
 				<!-- Header 2 style -->
 				<!-- paragraph -->
-				<p>&nbsp;</p>
+				<p align="center" class="style3">Sign up now to volunteer with the United Way of Athens-Limestone County:</p>
+				<p align="center"><br>
+                  <a class="button" href="http://volunteer.unitedwayathenslimestone.com/welcome1.html" target="_blank">Volunteer Registration Form </a>         <a class="button" href="./forms/group_safety_brief.php" target="_blank">Group Application Form </a></p>
+				  </div>
+				<p align="center">&nbsp;</p>
 				<p>The United Way is working to advance the common good by focusing on education, income and health: the building blocks for a good life. But we can't do it alone. We need the heads, hands and hearts of committed people like you to help us.
 				  <br>
 				  <br>
 				  Whether it is important to you to solve a community problem, advance a worthy cause or to develop as a person, volunteering offers many benefits in appreciation for the gift of your time and expertise.</p>
-				<ul> <!-- unordered list -->
+			  <ul> <!-- unordered list -->
 					<li><span>Make important networking contacts</span></li>
 					<li><span>Learn or develop skills</span></li>
 					<li><span>Teach your skills to others</span></li>
@@ -67,7 +72,8 @@
 				</ul>
 				<!-- paragraph -->
 				<p>Put your talents to work for your community. Volunteer!<br>
-				<br>Sign up now to volunteer with the United Way of Athens-Limestone County:<br> <a class="button" href="http://volunteer.unitedwayathenslimestone.com/welcome1.html" target="_blank">Volunteer Registration Form </a></p>	<!-- Link to the Volunteer registration form -->
+				</p>	
+				<!-- Link to the Volunteer registration form -->
 
 			  <hr> <!-- horizontal bar -->
 

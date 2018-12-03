@@ -43,19 +43,66 @@
 					<!-- paragraph -->
 					<p>If you would like to make a donation to benefit the United Way of Athens and Limestone County,
 					please select the 'Donate' button to make a secure donation through PayPal. </p>
-					<!-- PayPal generated code for a "Donate" button - links to a PayPal donate page -->
-				  <form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post">
-					  <p>
-					    <input type="hidden" name="cmd" value="_s-xclick">
-					    <input type="hidden" name="hosted_button_id" value="5P7FCDNCSBR4W">
-				      </p>
-					  <p>&nbsp;</p>
-			      <p>
-					    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
-					    <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" style="border: none;"><br>
-					</p>
-					</form>
-					<hr>
+					<div id="paypal-button-container"></div>
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+// Render the PayPal button
+paypal.Button.render({
+// Set your environment
+env: 'sandbox', // sandbox | production
+
+// Specify the style of the button
+style: {
+  layout: 'vertical',  // horizontal | vertical
+  size:   'responsive',    // medium | large | responsive
+  shape:  'pill',      // pill | rect
+  color:  'gold'       // gold | blue | silver | white | black
+},
+
+// Specify allowed and disallowed funding sources
+//
+// Options:
+// - paypal.FUNDING.CARD
+// - paypal.FUNDING.CREDIT
+// - paypal.FUNDING.ELV
+funding: {
+  allowed: [
+    paypal.FUNDING.CARD,
+    paypal.FUNDING.CREDIT
+  ],
+  disallowed: []
+},
+
+// PayPal Client IDs - replace with your own
+// Create a PayPal app: https://developer.paypal.com/developer/applications/create
+client: {
+  sandbox: 'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+  production: '<insert production client id>'
+},
+
+payment: function (data, actions) {
+  return actions.payment.create({
+    payment: {
+      transactions: [
+        {
+          amount: {
+            total: '0.01',
+            currency: 'USD'
+          }
+        }
+      ]
+    }
+  });
+},
+
+onAuthorize: function (data, actions) {
+  return actions.payment.execute()
+    .then(function () {
+      window.alert('Payment Complete!');
+    });
+}
+}, '#paypal-button-container');
+</script>
 					<h1>Donate Items</h1>
 					<p>If you have any items you would like to donate we can help with that. A disaster can leave people without the basic materials they need, however YOU CAN HELP!!</p>
 					<p>Below is a link that will take you to our donations form, where you can select what type of items

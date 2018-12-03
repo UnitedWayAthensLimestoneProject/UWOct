@@ -77,17 +77,16 @@
 				
 				</table>
 				<ul>
-					<li class="section_break">
-					</li>
-					<li class="buttons">
+					<li class="section_break">					</li>
+			  <li class="buttons">
 						<input id="submitForm" class="button_text" type="submit" name="submit" value="Continue">
 					</li>
-				</ul>
+			  </ul>
 			</form>
   		
   		</div>
 	<div class="footer">
-		Designed by Athens State University
+		Designed by Athens State University Computer Science Dept. 2018
 	</div>
 	</div>
 </body>

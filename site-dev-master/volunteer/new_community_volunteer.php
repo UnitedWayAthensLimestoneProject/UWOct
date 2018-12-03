@@ -389,7 +389,7 @@ AC_FL_RunContent( 'type','application/x-shockwave-flash','data','/securimage/sec
 		
 	</div>
 	<div class="footer">
-		Designed by Athens State University Computer Science Dept.
+		Designed by Athens State University Computer Science Dept. 2018
 	</div>
 	</div>
 </body>
